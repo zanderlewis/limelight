@@ -9,6 +9,7 @@ import bootcamp1.Drive;
 import bootcamp1.Robot;
 
 // Main Interface
+@SuppressWarnings("unused")
 public class App {
     // Helper functions
     public double cmToMm(double cm) {
