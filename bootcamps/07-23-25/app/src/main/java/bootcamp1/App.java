@@ -46,7 +46,7 @@ public class App {
         for (ArmSegment segment : robot.getArmSegments()) {
             System.out.println("  - " + segment.getType() + " segment with ID: " + segment.getId() +
                 ", length: " + segment.getSegmentLength() + "mm, extension: " + segment.getExtensionLength() +
-                "mm, angle: " + segment.getRotationAngle() + "°");
+                "mm, angle: " + segment.getRotationAngle() + "deg");
         }
         robot.getClaw().open();
         System.out.println("Claw state: " + (robot.getClaw().isOpen() ? "Open" : "Closed"));
@@ -63,13 +63,13 @@ public class App {
         for (ArmSegment segment : robot.getArmSegments()) {
             System.out.println("  - " + segment.getType() + " segment with ID: " + segment.getId() +
                 ", length: " + segment.getSegmentLength() + "mm, extension: " + segment.getExtensionLength() +
-                "mm, angle: " + segment.getRotationAngle() + "°");
+                "mm, angle: " + segment.getRotationAngle() + "deg");
         }
         // Test retraction
         endSegment.retract(app.cmToMm(2));
         System.out.println("After retraction:");
         System.out.println("  - " + endSegment.getType() + " segment with ID: " + endSegment.getId() +
             ", length: " + endSegment.getSegmentLength() + "mm, extension: " + endSegment.getExtensionLength() +
-            "mm, angle: " + endSegment.getRotationAngle() + "°");
+            "mm, angle: " + endSegment.getRotationAngle() + "deg");
     }
 }
