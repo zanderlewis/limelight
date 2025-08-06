@@ -1,0 +1,8 @@
+# Build Output
+.gradle/
+build/
+bin/
+
+# IDE
+.idea/
+.vscode/
